@@ -41,6 +41,8 @@ namespace Console_recursive_functions
         //recursive method
         public static double RecursiveFactorial(int number)
         {
+            //Console.WriteLine("number variable = " + number);
+
             if (number == 0)
                 return 1;
 

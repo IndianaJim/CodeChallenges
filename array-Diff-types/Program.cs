@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace array_Diff_types
 {
@@ -19,6 +20,17 @@ namespace array_Diff_types
             {
                 Console.WriteLine(obj);
             }
+
+            ArrayList array = new ArrayList();
+            array.Add(100);
+            array.Add("Bobby");
+            array.Add(33);
+            foreach (object obj1 in array)
+            {
+                Console.WriteLine(obj1);
+            }
+
+
 
         }
     }

@@ -13,19 +13,35 @@ namespace ConsoleReversals
     {
         static void Main(string[] args)
         {
+            string newStr = "";
             string initialStr = "one two three four five";
-            string result = ReverseMyString(initialStr);
-            Console.WriteLine(result);
-        }
 
-        public static string ReverseMyString(string str)
-        {
-            string resultStr = string.Join(" ", str
+            //version with Reverse function
+            string resultStr = string.Join(" ", initialStr
                 .Split(' ')
                 .Select(x => new String(x.Reverse().ToArray())));
+            Console.WriteLine(resultStr);
 
 
-            return resultStr;
+            //version 2 - without Reverse function
+            string[] splits = initialStr.Split(' ');
+            for (int i = 0; i < splits.Length; i++)
+            {
+                //Console.WriteLine("original word = " + splits[i]);
+                int length = splits[i].Length - 1;
+                string split1 = splits[i];
+                while (length >= 0)
+                {
+                    newStr = newStr + split1[length];
+                    length--;
+                }
+
+                newStr = newStr + " ";
+
+            } //end version 2
+            Console.WriteLine(newStr);
+
+
         }
     }
 }

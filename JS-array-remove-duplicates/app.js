@@ -29,5 +29,5 @@ let a = [1, 2, 5, 2, 1, 8];
 // let b = Object.keys(obj);
 // console.log(b);
 
-//one line
+//one line, using Set
 console.log([...new Set(a)]); //Set only stores unique values

@@ -114,12 +114,37 @@ companies.forEach(function(company) {
 
 // sort companies by start year
 //const sortedCompanies = companies.sort((a, b) => (a.start < b.start ? 1 : -1));
-const sortedCompanies = companies.sort((a, b) => a.start - b.start);
-console.log(sortedCompanies);
+// const sortedCompanies = companies.sort((a, b) => a.start - b.start);
+// console.log(sortedCompanies);
 
 // const sortAges = ages.sort((a, b) => (a > b ? 1 : -1));
 // // or just
 // const sortAges1 = ages.sort((a, b) => a - b);
 // console.log(sortAges1);
 
-// reduce
+// REDUCE
+
+// add all of the ages together...
+// const ageSum = ages.reduce(function(total, age) {
+//   return total + age;
+// }, 0);
+
+// const ageSum = ages.reduce((total, age) => total + age, 0);
+// console.log(ageSum);
+
+// get total yrs for all companies
+// const totalYears = companies.reduce(
+//   (total, company) => total + (company.end - company.start),
+//   0
+// );
+// console.log(totalYears);
+
+// COMBINE METHODS...
+
+const combined = ages
+  .map(age => age * 2)
+  .filter(age => age >= 40)
+  .sort((a, b) => a - b)
+  .reduce((total, age) => total + age, 0);
+
+console.log(combined);

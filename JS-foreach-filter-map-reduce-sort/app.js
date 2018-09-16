@@ -66,11 +66,42 @@ companies.forEach(function(company) {
 // console.log(eightiesCompanies);
 
 //get companies that lasted longer than 10 yrs
-const oldCompanies = companies.filter(
-  company => company.end - company.start > 10
-);
-console.log(oldCompanies);
+// const oldCompanies = companies.filter(
+//   company => company.end - company.start > 10
+// );
+//console.log(oldCompanies);
 
 // map
+//create array of company names
+// const companyNames = companies.map(function(company) {
+//   return company.name;
+// });
+
+// Map using fat arrow
+//const companyNames = companies.map(company => company.name);
+
+// Map using more fields in array result
+// const companyNames = companies.map(function(company) {
+//   return `${company.name} [${company.start} to ${company.end}]`;
+// });
+
+// same as above using fat arrow
+// const companyNames = companies.map(
+//   company => `${company.name} [${company.start} to ${company.end}]`
+// );
+// console.log(companyNames);
+
+// Map using ages array, get square of each age...
+const ageSquared = ages.map(age => age * age);
+console.log(ageSquared);
+
+const ageSquareRoot = ages.map(age => Math.sqrt(age));
+console.log(ageSquareRoot);
+
+const ageSquareRootTimesTwo = ages
+  .map(age => Math.sqrt(age))
+  .map(age => age * 2);
+console.log(ageSquareRootTimesTwo);
+
 // sort
 // reduce

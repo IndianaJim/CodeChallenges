@@ -25,7 +25,7 @@ companies.forEach(function(company) {
   //console.log(company.name);
 });
 
-// filter
+// FILTER
 
 // old way for loop
 // let canDrink = [];
@@ -71,7 +71,7 @@ companies.forEach(function(company) {
 // );
 //console.log(oldCompanies);
 
-// map
+// MAP
 //create array of company names
 // const companyNames = companies.map(function(company) {
 //   return company.name;
@@ -92,16 +92,34 @@ companies.forEach(function(company) {
 // console.log(companyNames);
 
 // Map using ages array, get square of each age...
-const ageSquared = ages.map(age => age * age);
-console.log(ageSquared);
+// const ageSquared = ages.map(age => age * age);
+// console.log(ageSquared);
 
-const ageSquareRoot = ages.map(age => Math.sqrt(age));
-console.log(ageSquareRoot);
+// const ageSquareRoot = ages.map(age => Math.sqrt(age));
+// console.log(ageSquareRoot);
 
-const ageSquareRootTimesTwo = ages
-  .map(age => Math.sqrt(age))
-  .map(age => age * 2);
-console.log(ageSquareRootTimesTwo);
+// const ageSquareRootTimesTwo = ages
+//   .map(age => Math.sqrt(age))
+//   .map(age => age * 2);
+// console.log(ageSquareRootTimesTwo);
 
-// sort
+// SORT
+// const sortedCompanies = companies.sort(function(c1, c2) {
+//   if (c1.start > c2.start) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+
+// sort companies by start year
+//const sortedCompanies = companies.sort((a, b) => (a.start < b.start ? 1 : -1));
+const sortedCompanies = companies.sort((a, b) => a.start - b.start);
+console.log(sortedCompanies);
+
+// const sortAges = ages.sort((a, b) => (a > b ? 1 : -1));
+// // or just
+// const sortAges1 = ages.sort((a, b) => a - b);
+// console.log(sortAges1);
+
 // reduce

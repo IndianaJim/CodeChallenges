@@ -146,5 +146,6 @@ const combined = ages
   .filter(age => age >= 40)
   .sort((a, b) => a - b)
   .reduce((total, age) => total + age, 0);
+// can also show this as: .reduce((a,b) => a + b, 0);
 
 console.log(combined);

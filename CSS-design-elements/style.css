@@ -1,0 +1,15 @@
+.myButton {
+  border: 1px solid;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  background-color: darkslategray;
+  color: rgb(236, 234, 234);
+}
+
+.myButton:hover {
+  background-color: rgb(236, 234, 234);
+  color: darkslategray;
+}

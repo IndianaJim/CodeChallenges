@@ -2,6 +2,7 @@
 var div = document.querySelector('div');
 var textInput = document.getElementById('textBoxId');
 var textValue;
+div.innerHTML = '';
 
 function getText() {
   textValue = textInput.value;
@@ -9,9 +10,10 @@ function getText() {
   var wordArray = splitWords(textValue);
   var wordMap = makeWordMap(wordArray);
   var finalWordArray = sortByCount(wordMap);
+  var len = finalWordArray.length;
 
   //display results
-  for (let i = 0; i < finalWordArray.length; i++) {
+  for (let i = 0; i < len; i++) {
     if (finalWordArray[i].total > 1) {
       div.innerHTML =
         div.innerHTML +

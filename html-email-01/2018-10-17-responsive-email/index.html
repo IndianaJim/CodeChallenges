@@ -6,17 +6,37 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta charset="utf-8">
   <style type="text/css">
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
     @media screen and (max-width: 600px) {
 
-      table[class=responsive-table] {
+      table[class="responsive-table"] {
+        width: 100% !important;
+        padding: 10px 5%;
+      }
+
+      table[class="responsive-table-2"] {
         width: 100% !important;
       }
 
       img[class="responsive-image"] {
         max-width: 100% !important;
         height: auto !important;
+      }
+
+      td[class="headline"] {
+        font-size: 36px !important;
+        background: gray;
+        color: #fff;
+        padding-bottom: 20px;
       }
     }
   </style>
@@ -34,7 +54,45 @@
               <img src="600x300.jpg" width="600" height="300" alt="600x300 placeholder" class="responsive-image">
             </td>
           </tr>
+          <tr>
+            <td align="center" style="font-size: 48px; padding-top: 20px;" class="headline">
+              I &hearts; Responsive Emails!
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 20px 0; font-size: 20px;">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, blanditiis. Porro vitae laboriosam
+              tenetur rem officia nulla iste temporibus? Ducimus modi animi, magnam, dolores doloribus repellat
+              consequuntur voluptates odio vitae laborum voluptatibus reiciendis facilis unde id tempore ab.
+              Consectetur quibusdam eum asperiores facere tempore cum repellat atque deleniti, iusto quos.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="300" align="right" cellspacing="0" cellpadding="0" border="0" class="responsive-table-2">
+                <tr>
+                  <td bgcolor="#aaa" style="padding: 15px;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eos nisi officiis harum? Debitis
+                    ipsum repellat quas minima soluta nesciunt doloribus provident animi praesentium nam. Corrupti
+                    eaque cum eius ducimus, ipsa ab inventore dolorem fugiat blanditiis recusandae, tenetur odit
+                    facilis.
+                  </td>
+                </tr>
+              </table>
+              <table width="300" align="left" cellspacing="0" cellpadding="0" border="0" class="responsive-table-2">
+                <tr>
+                  <td bgcolor="#ddd" style="padding: 15px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus distinctio eveniet
+                    delectus deleniti, eos, laudantium excepturi maiores, at fuga quae labore fugiat autem maxime
+                    atque. Magnam mollitia perferendis temporibus eos recusandae ipsum, consequatur, hic at vel ex
+                    cumque facere?
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
+
       </td>
     </tr>
   </table>

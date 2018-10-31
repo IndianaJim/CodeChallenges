@@ -23,17 +23,15 @@
       .one-solution-table img {
         max-width: 611px;
       }
-      /* .join-together-table .left-column {
-        padding: 20px 50px !important;
+       .join-together-table .left-column {
+        padding: 20px 0 !important;
       }
       .join-together-table .middle-column {
-        padding: 20px 50px !important;
-        float: center !important;
+        padding: 20px 0 !important;
       }
       .join-together-table .right-column {
-        padding: 20px 50px !important;
-        float: right !important;
-      } */
+        padding: 20px 0 !important;
+      } 
     }
     /* mid sizes */
     @media only screen and (max-width: 960px){
@@ -77,6 +75,15 @@
       .advance-table .left-column .left-store{
         text-align: center !important;
         width: 100%;
+      }
+      .join-together-table .left-column {
+        width:100%;
+      }
+      .join-together-table .middle-column {
+        width:100%;
+      }
+      .join-together-table .right-column {
+        width:100%;
       }
 
     }
@@ -337,24 +344,23 @@
           <!-- end of 'One App' row -->
           <!-- start of 'join together' row -->
           <tr>
-            <td style="background: #fafafa;">
-            <table class="join-together">
+            <td class="join-together-table" style="background: #fafafa;">
               <h3 style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 16px 0 0 0; font-weight: 300;  font-size: 24px; text-align: center; ">
-                Features <span style="font-weight: 400;">All Joined Together</span> in One App
+                Features All Joined Together in One App
               </h3>
-              <!-- start of left column -->
-              <table class="left-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:20px 15px 45px 20px;">
+              <!-- start of left column 'join together' row -->
+              <table class="left-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:15px 15px 70px 15px;">
                 <tr>
                   <td>
-                    <table class="title-icon" width="33.33%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <table class="title-icon" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
                       <tr>
-                        <td style="text-align: center;  padding: 0 0 0 15px;">
-                          <img src="/img/watch_screen.png" alt="sync">
+                        <td>
+                          <img src="/img/watch_screen.png" alt="notify">
                         </td>
                       </tr>
                       <tr>
-                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 15px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Sync
+                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 20px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                          Notify
                         </td>
                       </tr>
                     </table>
@@ -362,29 +368,30 @@
                 </tr>
                 <tr>
                   <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Computer manufacturer Lenovo is getting flak...</p>
+                    <p style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Lorem,
+                      ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a href="#" style="float: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; text-decoration: none; font-weight: 600;  font-size: 14px; padding: 0 0 0 35px;">Learn
+                    <a href="#" style="float: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; text-decoration: none; font-weight: 600;  font-size: 14px; padding: 0;">Learn
                       More</a>
                   </td>
                 </tr>
               </table>
-              <!-- end of left column -->
-              <!-- start of middle column -->
-              <table class="middle-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:20px 15px 25px 20px;">
+              <!-- end of left column  'join together' row -->
+              <!-- start of middle column 'join together' row -->
+              <table class="left-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:15px 15px 70px 15px;">
                 <tr>
                   <td>
-                    <table class="title-icon" width="33.33%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <table class="title-icon" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
                       <tr>
-                        <td style="text-align: center;">
-                          <img src="/img/watch_screen.png" alt="sync">
+                        <td>
+                          <img src="/img/watch_screen.png" alt="share">
                         </td>
                       </tr>
                       <tr>
-                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 15px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 20px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
                           Share
                         </td>
                       </tr>
@@ -393,23 +400,30 @@
                 </tr>
                 <tr>
                   <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Hero is a mobile payment system that could...</p>
+                    <p style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Lorem,
+                      ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </td>
-              </tr>              
-              </table>
-              <!-- end of middle column -->
-              <!-- start of right column -->
-              <table class="right-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:20px 15px 25px 20px;">
+                </tr>
                 <tr>
                   <td>
-                    <table class="title-icon" width="33.33%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <a href="#" style="float: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; text-decoration: none; font-weight: 600;  font-size: 14px; padding: 0;">Learn
+                      More</a>
+                  </td>
+                </tr>
+              </table>
+              <!-- end of middle column 'join together' row-->
+              <!-- start of right column 'join together' row-->
+              <table class="right-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="title-icon" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
                       <tr>
-                        <td style="text-align: center;">
-                          <img src="/img/watch_screen.png" alt="sync">
-                      </td>
+                        <td>
+                          <img src="/img/watch_screen.png" alt="stats">
+                        </td>
                       </tr>
                       <tr>
-                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 15px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                        <td style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 20px 0 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">
                           Stats
                         </td>
                       </tr>
@@ -418,18 +432,18 @@
                 </tr>
                 <tr>
                   <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Gemaito says it's looking into a report that it's...</p>
+                    <p style="text-align: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px;">Lorem,
+                      ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a href="#" style="float: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; text-decoration: none; font-weight: 600;  font-size: 14px; padding: 0 0 0 30px;">Learn
+                    <a href="#" style="float: center; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #2792ec; text-decoration: none; font-weight: 600;  font-size: 14px; padding: 0;">Learn
                       More</a>
                   </td>
                 </tr>
               </table>
-              <!-- end of right column -->
-            </table>
+              <!-- end of right column 'join together' row-->
             </td>
           </tr>
           <!-- end of 'join together' row -->

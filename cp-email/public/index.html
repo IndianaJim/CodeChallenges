@@ -9,14 +9,76 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
   <style>
+    /* desktop */
     @media only screen and (min-width: 960px){
-
+      .container {
+        width: 960px;
+      }
+      .header-left {
+        padding:36px 15px 70px 15px !important;
+      }
+      .one-solution-table {
+        text-align: center;
+      }
+      .one-solution-table img {
+        max-width: 611px;
+      }
+      /* .join-together-table .left-column {
+        padding: 20px 50px !important;
+      }
+      .join-together-table .middle-column {
+        padding: 20px 50px !important;
+        float: center !important;
+      }
+      .join-together-table .right-column {
+        padding: 20px 50px !important;
+        float: right !important;
+      } */
     }
+    /* mid sizes */
     @media only screen and (max-width: 960px){
-      
+      .container {
+        width: 600px;
+      }
     }
+    /* mobile */
     @media only screen and (max-width: 600px){
-      
+      .container {
+        width: 100%;
+      }
+      .header-left {
+        width: 100%;
+      }
+      .header-right {
+        width: 100%;
+      }
+      .lets-you-row .left-column{
+        width: 50%
+      }
+      .lets-you-row .middle-column{
+        width: 50%
+      }
+      .lets-you-row .right-column{
+        width: 100%
+      }
+      .advance-table .image-head{
+        width: 100%;
+      }
+      .advance-table .left-column{
+        width: 100%;
+      }
+      .advance-table .right-column{
+        width: 100%;
+      }
+      .advance-table .right-column .right-store{
+        text-align: center !important;
+        width: 100%;
+      }
+      .advance-table .left-column .left-store{
+        text-align: center !important;
+        width: 100%;
+      }
+
     }
 
     body {
@@ -81,7 +143,7 @@
               <table class="header-right" width="50%" cellspacing="0" cellpadding="0" style="background: white;">
                 <tr>
                   <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7d7d7d;">
-                    <table class="container center" width="100%" cellspacing="0" cellpadding="0" style="padding: 20px;">
+                    <table class="manual-table center" width="100%" cellspacing="0" cellpadding="0" style="padding: 20px;">
                       <tr>
                         <td style="text-align: center;">
                           <a href="#" style="font-size: 14px; font-weight: 600; text-decoration: none;  color: #7d7d7d;">about</a>
@@ -212,7 +274,7 @@
               <table class="advance-table" width="100%" cellspacing="0" cellpadding="0" style="padding:15px 15px 70px 15px; background: white;">
                 <tr>
                   <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 36px 0 5px 0; font-weight: 300;  font-size: 24px; text-align: center; ">
-                    <img src="/img/image_head.jpg">
+                    <img src="/img/image_head.jpg" class="image-head">
                   </td>
                 </tr>
                 <tr>
@@ -233,7 +295,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="text-align: right;">
+                        <td style="text-align: right;" class="left-store">
                           <img src="/img/appstore.png" alt="app store">
                         </td>
                       </tr>
@@ -249,7 +311,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="text-align: left;">
+                        <td style="text-align: left;" class="right-store">
                           <img src="/img/playstore.png" alt="Google Play">
                         </td>
                       </tr>
@@ -276,6 +338,7 @@
           <!-- start of 'join together' row -->
           <tr>
             <td style="background: #fafafa;">
+            <table class="join-together">
               <h3 style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 16px 0 0 0; font-weight: 300;  font-size: 24px; text-align: center; ">
                 Features <span style="font-weight: 400;">All Joined Together</span> in One App
               </h3>
@@ -311,7 +374,7 @@
               </table>
               <!-- end of left column -->
               <!-- start of middle column -->
-              <table class="left-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:20px 15px 25px 20px;">
+              <table class="middle-column" width="33.33%" cellspacing="0" cellpadding="0" style="padding:20px 15px 25px 20px;">
                 <tr>
                   <td>
                     <table class="title-icon" width="33.33%" cellspacing="0" cellpadding="0" style="padding:0;">
@@ -366,6 +429,7 @@
                 </tr>
               </table>
               <!-- end of right column -->
+            </table>
             </td>
           </tr>
           <!-- end of 'join together' row -->
@@ -528,9 +592,7 @@
           <tr>
             <td>
                 <table class="interest-table" width="100%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; background: #bfe5ff; 
-                background: -moz-linear-gradient(-45deg, #bfe5ff 0%, #cbebff 0%, #167be0 100%); 
-                background: -webkit-linear-gradient(-45deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); 
-                background: linear-gradient(135deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); padding:25px 15px 50px 15px; color: white;">
+                background: -moz-linear-gradient(-45deg, #bfe5ff 0%, #cbebff 0%, #167be0 100%); background: -webkit-linear-gradient(-45deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); background: linear-gradient(135deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); padding:25px 15px 50px 15px; color: white;">
                 <tr>
                   <td >
                     <h3>Interested in our App?</h3>

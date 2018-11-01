@@ -10,80 +10,111 @@
 
   <style>
     /* desktop */
-    @media only screen and (min-width: 960px){
+    @media only screen and (min-width: 960px) {
       .container {
         width: 960px;
       }
+
       .header-left {
-        padding:36px 15px 70px 15px !important;
+        padding: 36px 15px 70px 15px !important;
       }
+
       .one-solution-table {
         text-align: center;
       }
+
       .one-solution-table img {
         max-width: 611px;
       }
-       .join-together-table .left-column {
+
+      .join-together-table .left-column {
         padding: 20px 0 !important;
       }
+
       .join-together-table .middle-column {
         padding: 20px 0 !important;
       }
+
       .join-together-table .right-column {
         padding: 20px 0 !important;
-      } 
+      }
     }
+
     /* mid sizes */
-    @media only screen and (max-width: 960px){
+    @media only screen and (max-width: 960px) {
       .container {
         width: 600px;
       }
     }
+
     /* mobile */
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
       .container {
         width: 100%;
       }
+
       .header-left {
         width: 100%;
       }
+
       .header-right {
         width: 100%;
       }
-      .lets-you-row .left-column{
+
+      .lets-you-row .left-column {
         width: 50%
       }
-      .lets-you-row .middle-column{
+
+      .lets-you-row .middle-column {
         width: 50%
       }
-      .lets-you-row .right-column{
+
+      .lets-you-row .right-column {
         width: 100%
       }
-      .advance-table .image-head{
+
+      .advance-table .image-head {
         width: 100%;
       }
-      .advance-table .left-column{
+
+      .advance-table .left-column {
         width: 100%;
       }
-      .advance-table .right-column{
+
+      .advance-table .right-column {
         width: 100%;
       }
-      .advance-table .right-column .right-store{
+
+      .advance-table .right-column .right-store {
         text-align: center !important;
         width: 100%;
       }
-      .advance-table .left-column .left-store{
+
+      .advance-table .left-column .left-store {
         text-align: center !important;
         width: 100%;
       }
+
       .join-together-table .left-column {
-        width:100%;
+        width: 100%;
       }
+
       .join-together-table .middle-column {
-        width:100%;
+        width: 100%;
       }
+
       .join-together-table .right-column {
-        width:100%;
+        width: 100%;
+      }
+
+      .features-table .left-column {
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .features-table .right-column {
+        width: 100%  !important;
+        text-align: center !important;
       }
 
     }
@@ -96,7 +127,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-   
+
     .header-left {
       float: left;
     }
@@ -115,7 +146,7 @@
   </style>
 </head>
 
-<body style="background: black;">
+<body style="background: white;">
   <!-- start of html email -->
   <table width="100%" cellspacing="0" cellpadding="0">
     <tr>
@@ -451,153 +482,159 @@
           <!-- start of 1st 'features' row-->
           <tr>
             <td>
-              <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:45px 15px 0 15px; background: white;">
+              <table class="features-table" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:45px 15px 0 15px; background: white;">
                       <tr>
                         <td>
-                          <img src="/img/phone_icon.png" alt="connect">
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/phone_icon.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                Responsive Layout
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Responsive Layout
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
+                            Tanjin is one of nearly 2,000 people to have landed on Italy’s southernmost.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:45px 15px 0 15px; background: white;">
+                      <tr>
+                        <td>
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/phone_icon-48.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                Retina Ready
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
+                            The decision precluded a more aggressive, pre-rush hour response.
+                          </p>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
+                <!-- start of 2nd 'features' row-->
                 <tr>
                   <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
-                      Tanjin is one of nearly 2,000 people to have landed on Italy’s southernmost.
-                    </p>
-                  </td>
-                </tr>                
-              </table>
-              <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:45px 15px 0 15px; background: white;">
-                <tr>
-                  <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
                       <tr>
                         <td>
-                          <img src="/img/phone_icon-48.png" alt="connect">
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/check_icon.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                Various Skins
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Retina Ready
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
+                            Research shows that women politicians are considered more ethical than.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
+                      <tr>
+                        <td>
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/settings_icon.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                Great Performance
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
+                            Asian stocks post modest gains Tues., oil rises on Greek debt talks.
+                          </p>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
+                <!-- start of 3rd 'features' row-->
                 <tr>
                   <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
-                      The decision precluded a more aggressive, pre-rush hour response.
-                    </p>
-                  </td>
-                </tr>                
-              </table>
-            </td>
-          </tr>
-          <!-- start of 2nd 'features' row-->
-          <tr>
-            <td>
-              <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
-                <tr>
-                  <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                    <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
                       <tr>
                         <td>
-                          <img src="/img/check_icon.png" alt="connect">
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/menu_icon.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                UserFriendly Menus
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Various Skins
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 50px;">
+                            Regional cooperation can bring countries of a region close together and can reduce.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
+                      <tr>
+                        <td>
+                          <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
+                            <tr>
+                              <td>
+                                <img src="/img/share_icon.png" alt="connect">
+                              </td>
+                              <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                Social Share
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 50px;">
+                            Muriel Bowser’s administration says this move is unrelated to charges that encryption.
+                          </p>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
-                      Research shows that women politicians are considered more ethical than.
-                    </p>
-                  </td>
-                </tr>                
-              </table>
-              <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
-                <tr>
-                  <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
-                      <tr>
-                        <td>
-                          <img src="/img/settings_icon.png" alt="connect">
-                        </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Great Performance
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 20px;">
-                      Asian stocks post modest gains Tues., oil rises on Greek debt talks.
-                    </p>
-                  </td>
-                </tr>                
-              </table>
-            </td>
-          </tr>
-          <!-- start of 3rd 'features' row-->
-          <tr>
-            <td>
-              <table class="left-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
-                <tr>
-                  <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
-                      <tr>
-                        <td>
-                          <img src="/img/menu_icon.png" alt="connect">
-                        </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          UserFriendly Menus
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 50px;">
-                      Regional cooperation can bring countries of a region close together and can reduce.
-                    </p>
-                  </td>
-                </tr>                
-              </table>
-              <table class="right-column" width="50%" cellspacing="0" cellpadding="0" style="padding:15px 15px 0 15px; background: white;">
-                <tr>
-                  <td>
-                    <table class="title" width="100%" cellspacing="0" cellpadding="0" style="padding:0;">
-                      <tr>
-                        <td>
-                          <img src="/img/share_icon.png" alt="connect">
-                        </td>
-                        <td style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                          Social Share
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="text-align: left; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 50px;">
-                      Muriel Bowser’s administration says this move is unrelated to charges that encryption.
-                    </p>
-                  </td>
-                </tr>                
               </table>
             </td>
           </tr>
@@ -605,56 +642,59 @@
           <!-- start of 'interested' row -->
           <tr>
             <td>
-                <table class="interest-table" width="100%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; background: #bfe5ff; 
+              <table class="interest-table" width="100%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; background: #bfe5ff; 
                 background: -moz-linear-gradient(-45deg, #bfe5ff 0%, #cbebff 0%, #167be0 100%); background: -webkit-linear-gradient(-45deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); background: linear-gradient(135deg, #bfe5ff 0%,#cbebff 0%,#167be0 100%); padding:25px 15px 50px 15px; color: white;">
                 <tr>
-                  <td >
+                  <td>
                     <h3>Interested in our App?</h3>
-                    <p style="margin-left: auto; margin-right: auto; max-width:400px; padding: 10px 0 25px 0;">Muriel Bowser’s administration says move is unrelated to charges that encryption caused failures in Metro.</p>
-                    <tr>
-                      <td>
-                        <a href="#" style="border-radius: 3px; border: 2px solid white; padding: 11px 15px; text-decoration: none; color: white; font-size: 14px; font-weight: 600;">REQUEST A QUOTE</a>
-                      </td>
-                    </tr>
+                    <p style="margin-left: auto; margin-right: auto; max-width:400px; padding: 10px 0 25px 0;">Muriel
+                      Bowser’s administration says move is unrelated to charges that encryption caused failures in
+                      Metro.</p>
+                <tr>
+                  <td>
+                    <a href="#" style="border-radius: 3px; border: 2px solid white; padding: 11px 15px; text-decoration: none; color: white; font-size: 14px; font-weight: 600;">REQUEST
+                      A QUOTE</a>
                   </td>
                 </tr>
-              </table>
             </td>
           </tr>
-          <!-- end of 'interested' row -->
-          <!-- start of footer row -->
-          <tr>
-              <td>
-                  <table class="footer-table" width="100%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;  
-                   padding:20px 15px 15px 15px; background-color: white;">
-                  <tr>
-                    <td >
-                      <h3 style ="font-weight: 600;">HERO</h3>
-                      <tr>
-                          <td style="padding: 10px 0 25px 0;">
-                              <a href="#"><img src="/img/twitter_icon.png"></a>
-                              <a href="#"><img src="/img/facebook_icon.png"></a>
-                              <a href="#"><img src="/img/google_icon.png"></a>
-                              <a href="#"><img src="/img/pinterest_icon.png"></a>
-                              <a href="#"><img src="/img/linkedin_icon.png"></a>
-                              <a href="#"><img src="/img/youtube_icon.png"></a>
-                          </td>                                  
-                        </tr>
-                      <tr>
-                        <td style="font-size: 10px;">
-                            © 20XX All rights Reserved - Yourcompany. Is your inbox overflowing? <a href="#" style="text-decoration: none;font-size: 10px;">Unsubscribe</a>
-                        </td>
-                      </tr>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          <!-- end of footer row -->
         </table>
-        <!-- end of container -->
       </td>
     </tr>
+    <!-- end of 'interested' row -->
+    <!-- start of footer row -->
+    <tr>
+      <td>
+        <table class="footer-table" width="100%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;  
+                   padding:20px 15px 15px 15px; background-color: white;">
+          <tr>
+            <td>
+              <h3 style="font-weight: 600;">HERO</h3>
+          <tr>
+            <td style="padding: 10px 0 25px 0;">
+              <a href="#"><img src="/img/twitter_icon.png"></a>
+              <a href="#"><img src="/img/facebook_icon.png"></a>
+              <a href="#"><img src="/img/google_icon.png"></a>
+              <a href="#"><img src="/img/pinterest_icon.png"></a>
+              <a href="#"><img src="/img/linkedin_icon.png"></a>
+              <a href="#"><img src="/img/youtube_icon.png"></a>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 10px;">
+              © 20XX All rights Reserved - Yourcompany. Is your inbox overflowing? <a href="#" style="text-decoration: none;font-size: 10px;">Unsubscribe</a>
+            </td>
+          </tr>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- end of footer row -->
+  </table>
+  <!-- end of container -->
+  </td>
+  </tr>
   </table>
   <!-- end of html email -->
 </body>
